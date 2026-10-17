@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add User</title>
+    <link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Add New User</h1>
+            <p>Enter user information below</p>
+        </div>
+
+        <form id="user-form">
+
+            <div class="form-group">
+                <label for="name">First Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter first name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Enter last name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    placeholder="Enter age"
+                    min="1"
+                    max="120"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="job">Job</label>
+                <input
+                    type="text"
+                    id="job"
+                    name="job"
+                    placeholder="Enter job title"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="example@gmail.com"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter password"
+                    minlength="6"
+                    required
+                >
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Add User
+            </button>
+
+            <a href="/index.html" class="back-link">
+                ← Back to Users
+            </a>
+
+        </form>
+    </div>
+
+    <script type="module" src="../js/userform.js"></script>
+</body>
+</html>
